@@ -1,0 +1,26 @@
+main {
+  padding: 4rem;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+  border-radius: 1rem;
+}
+header nav a {
+  padding: 1rem;
+}
+
+.LRContainer {
+  max-width: 800px;
+  display: flex;
+  justify-self: center;
+  flex-wrap: wrap;
+  padding-bottom: 5rem;
+}
+
+img {
+  object-fit: cover;
+}
