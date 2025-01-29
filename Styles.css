@@ -12,14 +12,3 @@ header nav {
 header nav a {
   padding: 1rem;
 }
-
-.LRContainer {
-  display: flex;
-  justify-self: center;
-  
-  padding-bottom: 5rem;
-}
-
-img {
-  object-fit: cover;
-}
