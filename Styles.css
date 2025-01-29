@@ -14,10 +14,9 @@ header nav a {
 }
 
 .LRContainer {
-  max-width: 800px;
   display: flex;
   justify-self: center;
-  flex-wrap: wrap;
+  
   padding-bottom: 5rem;
 }
 
