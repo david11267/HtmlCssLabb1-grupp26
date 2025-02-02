@@ -16,9 +16,12 @@
 
 .card:hover {
   filter: brightness(85%);
-  font-style: italic;
 }
 
 table th {
+  font-weight: bold;
   border: 1px solid black;
+}
+table td {
+  font-style: italic;
 }
