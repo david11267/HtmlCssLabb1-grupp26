@@ -1,18 +1,17 @@
 .LRContainer {
-    display: flex;
-    justify-self: center;
-    padding-bottom: 5rem;
-  }
-  
-  img {
-    align-self: center;
-    object-fit: cover;
-    max-height: 300px;
-  }
-  
-  .BTContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
+  display: flex;
+  justify-self: center;
+  padding-bottom: 5rem;
+}
+
+img {
+  align-self: center;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.BTContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -1,0 +1,19 @@
+.card {
+  display: flex;
+  background-color: lightgray;
+  margin-bottom: 1rem;
+}
+
+.card img {
+  padding: 1rem;
+  max-width: 8rem;
+  object-fit: contain;
+}
+
+.applesContainer {
+  max-width: 500px;
+}
+
+.card:hover {
+  filter: brightness(85%);
+}
