@@ -19,9 +19,9 @@
 }
 
 table th {
-  font-weight: bold;
+  font: bold;
   border: 1px solid black;
 }
 table td {
-  font-style: italic;
+  font: italic;
 }
