@@ -19,4 +19,8 @@ body {
     padding: 1rem;
     text-decoration-style: none;
   }
+  main img{
+    width:400px;
+    height: auto;
+  }
   
