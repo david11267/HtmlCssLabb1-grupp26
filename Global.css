@@ -37,3 +37,29 @@ nav img {
   object-fit: cover;
   max-height: 200px;
 }
+
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+  
+  .Logo {
+    object-fit: contain;
+    height: 4rem;
+    width: 4rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-items: center;
+  }
+  
+  nav a {
+    padding: 1rem;
+    text-decoration-style: none;
+  }
+  main img{
+    width:400px;
+    height: auto;
+  }
+  
