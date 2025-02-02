@@ -1,13 +1,14 @@
 .LRContainer {
   display: flex;
-  justify-self: center;
+  flex-direction: column;
+
   padding-bottom: 5rem;
 }
 
 img {
-  align-self: center;
   object-fit: cover;
   max-height: 300px;
+  max-width: 300px;
 }
 
 .BTContainer {
