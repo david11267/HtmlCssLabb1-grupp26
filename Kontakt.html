@@ -64,12 +64,13 @@
     <form ID="ContactForm">
       <fieldset>
         <legend>Kontakt Formulär</legend>
-        <label>Primär kontaktväg
-          <br>
-          <input type="radio" name="radio" value="Telefon"> Telefon
-          <br>
-          <input type="radio" name="radio" value="Email"> Email
-        </label>
+        <fieldset>
+          <legend>Primär kontaktväg</legend>
+          <input type="radio" name="radio" value="Telefon" id="telefon"> 
+          <label for="telefon">Telefon</label> <br>
+          <input type="radio" name="radio" value="Email" id="email">
+          <label for="email">Email</label>
+        </fieldset>
           <label for="Email">Skriv din emailadress</label>
           <input type="text" ID="Email" required>
           <label for="Telefon">Skriv ditt telefonnummer</label>
