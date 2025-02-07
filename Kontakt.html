@@ -61,34 +61,36 @@
         ></iframe>
       </aside>
     </div>
-    <form id="ContactForm">
-      <caption>
-        Kontakt Formulär
-      </caption>
-      <label for="PrimaryContact"
-        >Skriv din kontaktinformation(exempel, din mailadress eller
-        telefonnummer)</label
-      >
-      <input type="text" id="PrimaryContact" />
-      <input type="checkbox" />
-      <input type="radio" name="radio" />
-      <input type="radio" name="radio" />
-      <label for="selector">Vem vill du ska hantera din fråga?</label>
-      <select id="selector">
-        <option>Första tillgängliga personen</option>
-        <option>David</option>
-        <option>Molly</option>
-        <option>Båda</option>
-      </select>
-      <label for="FreeText">Skriv ner vad du vill säga till oss här</label>
-      <textarea rows="4" id="FreeText"></textarea>
-      <label for="Agreement"
-        >Genom att kryssa nedre checkboxen går du med på att din information kan
-        sparas</label
-      >
-      <input type="checkbox" id="Agreement" required />
-      <button type="reset">Reset</button>
-      <button type="submit">Submit</button>
+    <form ID="ContactForm">
+      <fieldset>
+        <legend>Kontakt Formulär</legend>
+        <label for="radio">Primär kontaktväg</label>
+        <div class="RadioButton">
+          <input type="radio" name="radio" value="Telefon"> Telefon
+        </div>
+        <div class="RadioButton">
+          <input type="radio" name="radio" value="Email"> Email
+        </div>
+          <label for="Email">Skriv din emailadress</label>
+          <input type="text" ID="Email" required>
+          <label for="Telefon">Skriv ditt telefonnummer</label>
+          <input type="tel" ID="Telefon" required>
+        <label for="selector">Vem vill du ska hantera din fråga?</label>
+        <select ID="selector">
+          <option>Första tillgängliga personen</option>
+          <option>David</option>
+          <option>Molly</option>
+          <option>Båda</option>
+        </select>
+        <label for="FreeText">Skriv ner vad du vill säga till oss här</label>
+        <textarea rows = "4" ID="FreeText"></textarea>
+        <label for="optional">Genom att kryssa checkboxen går du med på att få reklam(valfri)</label>
+        <input type="checkbox" ID="optional">
+        <label for="Agreement">Genom att kryssa checkboxen går du med på att din information kan sparas</label>
+        <input type="checkbox" ID="Agreement" required>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </fieldset>
     </form>
   </body>
 </html>
