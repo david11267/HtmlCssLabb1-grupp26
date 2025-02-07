@@ -8,17 +8,20 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="menu">
         <div>
           <!--https://static.vecteezy.com/system/resources/previews/025/228/990/non_2x/fresh-fruit-salad-bowl-isolated-on-transparent-background-free-png.png-->
-          <img
-            class="Logo"
-            src="images/Logo.webp"
-            alt="Logo"
-          />
-          <a href="Index.html">Hem</a>
-          <a href="Kontakt.html">Kontakt</a>
-          <a href="Object.html">Object sida</a>
+          <img class="Logo" src="images/Logo.webp" alt="Logo" />
+
+          <ul>
+            <ul class="parent">
+              <li><a href="Index.html">Hem</a></li>
+              <li class="dropdown"><a href="Object.html">Object sida</a></li>
+            </ul>
+            <li>
+              <a href="Kontakt.html">Kontakt</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -58,26 +61,34 @@
         ></iframe>
       </aside>
     </div>
-    <form ID="ContactForm">
-        <caption>Kontakt Formulär</caption>
-        <label for="PrimaryContact">Skriv din kontaktinformation(exempel, din mailadress eller telefonnummer)</label>
-        <input type="text" ID="PrimaryContact">
-        <input type="checkbox">
-        <input type="radio" name="radio">
-        <input type="radio" name="radio">
-        <label for="selector">Vem vill du ska hantera din fråga?</label>
-        <select ID="selector">
-          <option>Första tillgängliga personen</option>
-          <option>David</option>
-          <option>Molly</option>
-          <option>Båda</option>
-        </select>
-        <label for="FreeText">Skriv ner vad du vill säga till oss här</label>
-        <textarea rows = "4" ID="FreeText"></textarea>
-        <label for="Agreement">Genom att kryssa nedre checkboxen går du med på att din information kan sparas</label>
-        <input type="checkbox" ID="Agreement" required>
-        <button type="reset">Reset</button>
-        <button type="submit">Submit</button>
-      </form>
+    <form id="ContactForm">
+      <caption>
+        Kontakt Formulär
+      </caption>
+      <label for="PrimaryContact"
+        >Skriv din kontaktinformation(exempel, din mailadress eller
+        telefonnummer)</label
+      >
+      <input type="text" id="PrimaryContact" />
+      <input type="checkbox" />
+      <input type="radio" name="radio" />
+      <input type="radio" name="radio" />
+      <label for="selector">Vem vill du ska hantera din fråga?</label>
+      <select id="selector">
+        <option>Första tillgängliga personen</option>
+        <option>David</option>
+        <option>Molly</option>
+        <option>Båda</option>
+      </select>
+      <label for="FreeText">Skriv ner vad du vill säga till oss här</label>
+      <textarea rows="4" id="FreeText"></textarea>
+      <label for="Agreement"
+        >Genom att kryssa nedre checkboxen går du med på att din information kan
+        sparas</label
+      >
+      <input type="checkbox" id="Agreement" required />
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
