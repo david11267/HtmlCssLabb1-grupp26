@@ -59,25 +59,31 @@
       </aside>
     </div>
     <form ID="ContactForm">
-        <caption>Kontakt Formulär</caption>
-        <label for="PrimaryContact">Skriv din kontaktinformation(exempel, din mailadress eller telefonnummer)</label>
-        <input type="text" ID="PrimaryContact">
-        <input type="checkbox">
-        <input type="radio" name="radio">
-        <input type="radio" name="radio">
+      <fieldset>
+        <legend>Kontakt Formulär</legend>
+        <label for="radio">Primär kontaktväg</label> <br>
+        Telefon<input type="radio" name="radio" value="Telefon"> <br>
+        Email<input type="radio" name="radio" value="Email"> <br>
+        <label for="Email">Skriv din emailadress</label>
+        <input type="text" ID="Email" required> <br>
+        <label for="Telefon">Skriv ditt telefonnummer</label>
+        <input type="tel" ID="Telefon" required> <br>
         <label for="selector">Vem vill du ska hantera din fråga?</label>
         <select ID="selector">
           <option>Första tillgängliga personen</option>
           <option>David</option>
           <option>Molly</option>
           <option>Båda</option>
-        </select>
-        <label for="FreeText">Skriv ner vad du vill säga till oss här</label>
-        <textarea rows = "4" ID="FreeText"></textarea>
-        <label for="Agreement">Genom att kryssa nedre checkboxen går du med på att din information kan sparas</label>
-        <input type="checkbox" ID="Agreement" required>
+        </select><br>
+        <label for="FreeText">Skriv ner vad du vill säga till oss här</label><br>
+        <textarea rows = "4" ID="FreeText"></textarea><br>
+        <label for="optional">Genom att kryssa checkboxen går du med på att få reklam(valfri)</label>
+        <input type="checkbox" ID="optional"><br>
+        <label for="Agreement">Genom att kryssa checkboxen går du med på att din information kan sparas</label>
+        <input type="checkbox" ID="Agreement" required><br>
         <button type="reset">Reset</button>
         <button type="submit">Submit</button>
-      </form>
+    </fieldset>
+    </form>
   </body>
 </html>
