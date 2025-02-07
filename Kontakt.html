@@ -61,26 +61,30 @@
     <form ID="ContactForm">
       <fieldset>
         <legend>Kontakt Formulär</legend>
-        <label for="radio">Primär kontaktväg</label> <br>
-        Telefon<input type="radio" name="radio" value="Telefon"> <br>
-        Email<input type="radio" name="radio" value="Email"> <br>
-        <label for="Email">Skriv din emailadress</label>
-        <input type="text" ID="Email" required> <br>
-        <label for="Telefon">Skriv ditt telefonnummer</label>
-        <input type="tel" ID="Telefon" required> <br>
+        <label for="radio">Primär kontaktväg</label>
+        <div class="RadioButton">
+          <input type="radio" name="radio" value="Telefon"> Telefon
+        </div>
+        <div class="RadioButton">
+          <input type="radio" name="radio" value="Email"> Email
+        </div>
+          <label for="Email">Skriv din emailadress</label>
+          <input type="text" ID="Email" required>
+          <label for="Telefon">Skriv ditt telefonnummer</label>
+          <input type="tel" ID="Telefon" required>
         <label for="selector">Vem vill du ska hantera din fråga?</label>
         <select ID="selector">
           <option>Första tillgängliga personen</option>
           <option>David</option>
           <option>Molly</option>
           <option>Båda</option>
-        </select><br>
-        <label for="FreeText">Skriv ner vad du vill säga till oss här</label><br>
-        <textarea rows = "4" ID="FreeText"></textarea><br>
+        </select>
+        <label for="FreeText">Skriv ner vad du vill säga till oss här</label>
+        <textarea rows = "4" ID="FreeText"></textarea>
         <label for="optional">Genom att kryssa checkboxen går du med på att få reklam(valfri)</label>
-        <input type="checkbox" ID="optional"><br>
+        <input type="checkbox" ID="optional">
         <label for="Agreement">Genom att kryssa checkboxen går du med på att din information kan sparas</label>
-        <input type="checkbox" ID="Agreement" required><br>
+        <input type="checkbox" ID="Agreement" required>
         <button type="reset">Reset</button>
         <button type="submit">Submit</button>
     </fieldset>

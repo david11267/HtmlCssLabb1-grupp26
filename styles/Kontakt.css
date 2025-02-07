@@ -1,9 +1,12 @@
 .Contact_List{
     display: flex;
 }
-#ContactForm{
+#ContactForm>fieldset{
     display: flex;
     flex-direction: column;
     max-width: 800px;
     padding: 1 rem;
+}
+.RadioButton{
+    flex-direction:row;
 }
