@@ -11,15 +11,22 @@
       <nav id="menu">
         <div>
           <!--https://static.vecteezy.com/system/resources/previews/025/228/990/non_2x/fresh-fruit-salad-bowl-isolated-on-transparent-background-free-png.png-->
-          <img class="Logo" src="images/Logo.webp" alt="Logo" />
+
+          <a href="Index.html"
+            ><img class="Logo" src="images/Logo.webp" alt="Logo"
+          /></a>
 
           <ul>
-            <ul class="parent">
-              <li><a href="Index.html">Hem</a></li>
-              <li class="dropdown"><a href="Object.html">Object sida</a></li>
-            </ul>
             <li>
-              <a href="Kontakt.html">Kontakt</a>
+              <select class="dropdown">
+                <option value="Hem"><a href="Index.html">Hem</a></option>
+                <option value="Kontakt">
+                  <a href="Kontakt.html">Kontakt</a>
+                </option>
+              </select>
+            </li>
+            <li>
+              <a class="dropdown" href="Object.html">Object sida</a>
             </li>
           </ul>
         </div>
@@ -61,7 +68,7 @@
         ></iframe>
       </aside>
     </div>
-    <form ID="ContactForm">
+    <form id="ContactForm">
       <fieldset>
         <legend>Kontakt Formulär</legend>
         <fieldset>
@@ -76,21 +83,27 @@
           <label for="Telefon">Skriv ditt telefonnummer</label>
           <input type="tel" ID="Telefon" required>
         <label for="selector">Vem vill du ska hantera din fråga?</label>
-        <select ID="selector">
+        <select id="selector">
           <option>Första tillgängliga personen</option>
           <option>David</option>
           <option>Molly</option>
           <option>Båda</option>
         </select>
         <label for="FreeText">Skriv ner vad du vill säga till oss här</label>
-        <textarea rows = "4" ID="FreeText"></textarea>
-        <label for="optional">Genom att kryssa checkboxen går du med på att få reklam(valfri)</label>
-        <input type="checkbox" ID="optional">
-        <label for="Agreement">Genom att kryssa checkboxen går du med på att din information kan sparas</label>
-        <input type="checkbox" ID="Agreement" required>
+        <textarea rows="4" id="FreeText"></textarea>
+        <label for="optional"
+          >Genom att kryssa checkboxen går du med på att få
+          reklam(valfri)</label
+        >
+        <input type="checkbox" id="optional" />
+        <label for="Agreement"
+          >Genom att kryssa checkboxen går du med på att din information kan
+          sparas</label
+        >
+        <input type="checkbox" id="Agreement" required />
         <button type="reset">Reset</button>
         <button type="submit">Submit</button>
-    </fieldset>
+      </fieldset>
     </form>
   </body>
 </html>

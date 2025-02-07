@@ -11,15 +11,22 @@
       <nav id="menu">
         <div>
           <!--https://static.vecteezy.com/system/resources/previews/025/228/990/non_2x/fresh-fruit-salad-bowl-isolated-on-transparent-background-free-png.png-->
-          <img class="Logo" src="images/Logo.webp" alt="Logo" />
+
+          <a href="Index.html"
+            ><img class="Logo" src="images/Logo.webp" alt="Logo"
+          /></a>
 
           <ul>
-            <ul class="parent">
-              <li><a href="Index.html">Hem</a></li>
-              <li class="dropdown"><a href="Object.html">Object sida</a></li>
-            </ul>
             <li>
-              <a href="Kontakt.html">Kontakt</a>
+              <select class="dropdown">
+                <option value="Hem"><a href="Index.html">Hem</a></option>
+                <option value="Kontakt">
+                  <a href="Kontakt.html">Kontakt</a>
+                </option>
+              </select>
+            </li>
+            <li>
+              <a class="dropdown" href="Object.html">Object sida</a>
             </li>
           </ul>
         </div>
